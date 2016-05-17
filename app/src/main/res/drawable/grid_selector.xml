@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 圆角 -->
+            <corners android:radius="4.0dp"/>
+            <!--渐变角度必须是45的倍数-->
+            <gradient
+                android:startColor="#ffabb8c9"
+                android:endColor="#ff6f84a3"
+                android:angle="270.0"
+                android:centerX="0.5"
+                android:centerY="0.75"
+                />
+            <stroke
+                android:color="@android:color/holo_red_dark"
+                android:width="2dp"
+                android:dashGap="2dp"
+                android:dashWidth="2dp"
+                />
+        </shape>
+    </item>
+</selector>

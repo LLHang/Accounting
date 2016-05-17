@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/meigui">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/top_title" />
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/include_bottom"
+        android:layout_below="@+id/include_title"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include_bottom"
+        layout="@layout/bottom_box" />
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">随心记账</string>
+    <string name="welcome_info">欢迎您使用随心记账</string>
+
+    <string name="grid_add_payout">记录消费</string>
+    <string name="grid_query_payout">查询消费</string>
+    <string name="grid_accountbook">账本</string>
+    <string name="grid_statistics">统计消费</string>
+    <string name="grid_category">类别管理</string>
+    <string name="grid_user">用户</string>
+
+    <string name="hint_user_name">人员名称</string>
+    <string name="hint_account_book_name">账本名称</string>
+    <string name="hint_enter_amount">请输入金额</string>
+    <string name="hint_enter_category">请输入或选择消费类别</string>
+    <string name="hint_select_user">请选择消费人，第一位为付款人</string>
+    <string name="hint_enter_comment">请输入人消费心得或备注</string>
+
+    <string name="title_tv">随心记账</string>
+    <string name="title_user">人员管理(%s)</string>
+    <string name="title_account_book">账本管理(%s)</string>
+    <string name="title_category">类别管理(%s)</string>
+    <string name="title_add">新建</string>
+    <string name="title_edit">修改</string>
+    <string name="title_category_add_or_edit">%s类别</string>
+    <string name="title_payout_add_or_edit">%s消费</string>
+    <string name="title_payout_total">共%1$s笔，合计消费%2$s元</string>
+    <string name="title_statistics">统计消费-%s</string>
+    <string name="title_query_payout">消费查询-%1$s(%2$s)</string>
+
+    <string name="button_text_save">保存</string>
+    <string name="button_text_cancel">取消</string>
+    <string name="button_text_yes">是</string>
+    <string name="button_text_no">否</string>
+    <string name="button_text_select_account_book">选择账本</string>
+    <string name="button_text_enter_amount">输入金额</string>
+    <string name="button_text_category">选择类别</string>
+    <string name="button_text_select_date">选择日期</string>
+    <string name="button_text_select_type">计算方式</string>
+    <string name="button_text_select_user">选择消费人</string>
+    <string name="button_text_back">返回</string>
+    <string name="button_text_database_backup">数据备份</string>
+    <string name="button_text_database_restore">数据还原</string>
+
+    <string name="dialog_title_user">%s人员</string>
+    <string name="dialog_title_statistics">统计</string>
+    <string name="dialog_title_account_book">%s账本</string>
+    <string name="dialog_title_delete">删除提示</string>
+    <string name="dialog_message_user_delete">你确定要删除%s用户吗？</string>
+    <string name="dialog_message_category_delete">你确定要这条消费记录记录吗？</string>
+    <string name="dialog_message_payout_delete">你确定要删除该条消费吗？</string>
+    <string name="dialog_message_accountbook_delete">你确定要删除账本%s吗？</string>
+    <string name="dialog_waiting_statistics_progress">正在统计中，请稍后......</string>
+    <string name="dialog_title_database_backup">数据备份</string>
+    <string name="dialog_message_restore_success">数据还原成功</string>
+    <string name="dialog_message_restore_fail">数据还原失败</string>
+    <string name="dialog_message_backup_success">数据备份成功</string>
+    <string name="dialog_message_backup_fail">数据备份失败</string>
+
+    <string name="check_text_chinese_english_num">%s必须是中文，英文与数字</string>
+    <string name="check_text_user_exist">该用户已存在</string>
+    <string name="check_text_account_book_exist">该账本已存在</string>
+    <string name="check_text_money">金额必须是数字并,且不能超过小数点后两位</string>
+    <string name="check_text_category_is_null">请选择一个消费类别</string>
+    <string name="check_text_user_is_null">请选择消费人</string>
+    <string name="check_text_payout_user">均分或借贷请至少选择两个消费人</string>
+    <string name="check_text_payout_user2">个人消费请至少选择一个消费人</string>
+    <string name="check_text_payout_date_is_after">不能花明天的钱哦</string>
+    <string name="check_text_payout_type_not_user">您已将消费类型改为个人消费，默认将第一消费人设为改为当前消费人，如有误，请重新设置消费人</string>
+
+    <string name="tips_add_success">保存成功</string>
+    <string name="tips_add_fail">保存失败</string>
+    <string name="tips_delete_fail">删除失败</string>
+    <string name="tips_delete_success">删除成功</string>
+    <string name="tips_not_category">父类别不能成为自己的子类别！</string>
+    <string name="tips_not_delete">默认%s不能删除</string>
+
+    <string name="menu_text_edit">修改</string>
+    <string name="menu_text_fail">删除</string>
+
+    <string name="check_box_text_is_default">设置为默认账本</string>
+
+    <string name="textview_text_children_category">%s子类</string>
+    <string name="textview_text_category_name">类别名称</string>
+    <string name="textview_text_category_parentid">所属分类</string>
+    <string name="textview_text_payout_amount">消费金额：%s元</string>
+
+    <string name="category_total">统计类别</string>
+
+    <string name="spinner_please_choose">--请选择--</string>
+
+    <string name="export_data_fail">导出失败</string>
+
+    <string name="text_accountbook_money">合计消费%s元</string>
+    <string name="text_accountbook_count">共%s笔</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+</resources>

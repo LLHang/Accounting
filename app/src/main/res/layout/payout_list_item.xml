@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/payout_list_item_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/payout_list_item_top_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="2016-03-11"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/payout_list_item_top_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="共2笔，合计消费100元"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/payout_list_item_top_rl"
+        android:background="@color/blue"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/payout_list_item_bottom_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_launcher" />
+
+
+        <TextView
+            android:id="@+id/payout_list_item_bottom_category_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/payout_list_item_bottom_icon_iv"
+            android:text="晚餐" />
+
+        <TextView
+            android:id="@+id/payout_list_item_bottom_user_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/payout_list_item_bottom_icon_iv"
+            android:layout_alignStart="@+id/payout_list_item_bottom_category_tv"
+            android:text="王小红" />
+
+        <TextView
+            android:id="@+id/payout_list_item_bottom_heji_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="合计消费：2000元" />
+    </RelativeLayout>
+
+</RelativeLayout>

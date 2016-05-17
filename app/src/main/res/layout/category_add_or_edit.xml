@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/category_main_body_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/ListViewItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/textview_text_category_name" />
+
+        <EditText
+            android:id="@+id/category_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLength="20" />
+
+        <TextView
+            style="@style/ListViewItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/textview_text_category_parentid" />
+
+        <Spinner
+            android:id="@+id/category_parentid_sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:stretchColumns="0,1">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/category_save_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:text="@string/button_text_save" />
+
+            <Button
+                android:id="@+id/category_cancel_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:text="@string/button_text_cancel" />
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

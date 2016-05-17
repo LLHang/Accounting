@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lihang.accounting">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.UserActivity" />
+        <activity android:name=".activity.AccountBookActivity" />
+        <activity android:name=".activity.CategoryActivity" />
+        <activity android:name=".activity.CategoryAddOrEditActivity" />
+        <activity android:name=".activity.PayoutAddOrEditActivity" />
+        <activity android:name=".activity.QueryPayoutActivity" />
+        <activity android:name=".activity.StatisticsActivity" />
+        <activity android:name=".activity.CategoryCharActivity" />
+
+        <service
+            android:name=".service.ServiceDatabaseBackup"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".receiver.DatabaseBackupReceiver" />
+        <receiver android:name=".receiver.BootStartReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+    </application>
+
+</manifest>

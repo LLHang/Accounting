@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_selector"
+    android:minHeight="50dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/account_book_item_icon_iv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/account_book_item_icon_iv"
+        android:layout_marginLeft="10dp"
+        style="@style/ListViewItemStyle"
+        android:id="@+id/account_book_item_name_tv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/account_book_item_icon_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/account_book_item_icon_iv"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/account_book_item_money_tv"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/account_book_item_total_tv"
+        />
+
+</RelativeLayout>

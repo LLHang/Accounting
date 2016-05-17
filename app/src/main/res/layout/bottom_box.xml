@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:layout_alignParentBottom="true">
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/bottom_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/account_book_big_icon" />
+
+        <TextView
+            android:id="@+id/top_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/bottom_icon_iv"
+            android:paddingLeft="10dp"
+            android:text="@string/welcome_info"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/account_book_big_icon" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_list_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bottom_bar_rl">
+
+        <ListView style="@style/ListViewStyle"
+            android:id="@+id/slide_list_lv">
+
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>
